@@ -10,23 +10,14 @@ const getSlider = () => {
       slide1.style.cssText = `transform: translate(0%, 0%);`;
       slide2.style.cssText = `transform: translate(-150%, -100%);`;
       slide3.style.cssText = `transform: translate(-200%, -200%);`;
-      slider.style.cssText = `
-        background-image: url('../src/img/slider/ice-bg-1.png');
-        background-position: 0% 100%;`;
     } else if(range.value >= 40 && range.value <= 60) {
       slide1.style.cssText = `transform: translate(150%, 0%);`;
       slide2.style.cssText = `transform: translate(0, -100%);`;
       slide3.style.cssText = `transform: translate(-100%, -200%);`;
-      slider.style.cssText = `
-        background-image: url('../src/img/slider/ice-bg-2.png');
-        background-position: 100% 100%;`;
     } else if(range.value <= 10) {
       slide1.style.cssText = `transform: translate(200%, 0%);`;
       slide2.style.cssText = `transform: translate(100%, -100%);`;
       slide3.style.cssText = `transform: translate(0, -200%);`;
-      slider.style.cssText = `
-        background-image: url('../src/img/slider/ice-bg-3.png');
-        background-position: 10% 90%;`;
     }
   });            
 };
